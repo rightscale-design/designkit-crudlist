@@ -1,7 +1,7 @@
 {
   "name": "designkit-crudlist",
   "version": "0.1.0",
-  "description": "Sass module for css *.",
+  "description": "Sass module for css list/detail views",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rightscale-design/designkit-crudlist.git"
