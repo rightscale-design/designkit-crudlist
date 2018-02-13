@@ -1,3 +1,5 @@
 # v1.0.0
 
-* First release
+* Removed bourbon
+* Updated build setup
+* Added new readme script
