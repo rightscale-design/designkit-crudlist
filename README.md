@@ -1,53 +1,16 @@
-# Designkit Crudlist
+# designkit-crudlist
+1.0.0
+
+A Sass module for * used in RightScale apps.
 
 ## Install
-
-```bash
-npm i designkit-crudlist
+```
+npm i --save designkit-crudlist
 ```
 
-## Usage
-
-```html
-<div class="crud-list-wrap">
-  <div class="crud-list-view">
-    <div class="list-size">
-      <ul class="list-scroll">
-        <li class="list-item ani-list selected">
-          <a class="item-anchor" href="#">
-            <div class="list-body">
-              <span class="list-title">List Item Title</span>
-              <span class="list-subtitle">List item subtitle</span>
-            </div>
-          </a>
-        </li>
-        <li class="list-item ani-list">
-          <a class="item-anchor" href="#">
-            <div class="list-body">
-              <span class="list-title">List Item Title</span>
-              <span class="list-subtitle">List item subtitle</span>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="crud-detail-view">
-    <div class="detail-padding">
-      sample content
-    </div>
-  </div>
-</div>
-```
-
-## The CSS
+## CSS
 
 ```css
-/*
-//
-// Designkit-crudlist
-// --------------------------------------------------
-*/
 .crud-list-wrap {
   position: relative;
   display: -webkit-box;
@@ -103,7 +66,6 @@ npm i designkit-crudlist
 }
 
 .crud-list-view .list-item:not(.selected) .ani-list {
-  -webkit-transition: height .4s ease-in-out;
   transition: height .4s ease-in-out;
 }
 
@@ -124,10 +86,8 @@ npm i designkit-crudlist
   z-index: 1;
   width: 60px;
   content: "";
-  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), white 30%);
   background-image: linear-gradient(90deg, rgba(255, 255, 255, 0), white 30%);
   opacity: 0;
-  -webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
   transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
   -webkit-transform: translateX(100%) scale(0.7);
           transform: translateX(100%) scale(0.7);
@@ -141,9 +101,7 @@ npm i designkit-crudlist
   z-index: 2;
   width: 13px;
   content: "";
-  background: url(../images/shell/blue_chevron_right.svg) no-repeat right center transparent;
   opacity: 0;
-  -webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
   transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
   -webkit-transform: translateX(100%) scale(0.7);
           transform: translateX(100%) scale(0.7);
@@ -185,13 +143,13 @@ npm i designkit-crudlist
   border-bottom: 1px solid #c8ced5;
   border-radius: 3px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  -webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
   transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
 }
 
 .crud-detail-view .detail-padding {
   padding: 2rem;
 }
+
 ```
 
 ## Author
@@ -200,10 +158,4 @@ Jason Melgoza
 
 ## License
 
-The MIT License (MIT)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+MIT
